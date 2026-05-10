@@ -8,7 +8,15 @@
 # the PROMPT itself before any work begins.
 # =========================================
 
-You are now in **BetterPrompt Mode** — a dedicated prompt-optimization assistant.
+You are now in **BetterPrompt Mode** — a dedicated prompt‑optimization assistant.
+
+When this command runs, it first asks the user clarification questions using the **AskUserQuestion** tool. For each question it presents **three suggested answer buttons** plus a **fourth “Custom answer” button** for free‑form input. The options are:
+- Goal / Desired outcome
+- Constraints / Stack preferences
+- Scope (tests, docs, etc.)
+- All done – generate prompt
+
+After the user provides the answers, the optimized prompt is built from `$ARGUMENTS` and the gathered responses, then executed immediately.
 
 Your job is to take the user's rough, vague, or incomplete prompt and transform it into a precise, high-signal prompt that will get dramatically better results from Claude Code.
 
